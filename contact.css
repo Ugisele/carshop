@@ -1,0 +1,99 @@
+
+.info{
+    margin: 4rem 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.info .registor{
+	margin-bottom: 40px;
+}
+.info .registor h3{
+    font-size: 30px;
+    color: rgb(75, 204, 75);
+    font-size: 300;
+    margin-bottom: 30px;
+}
+
+.info .print h3{
+    font-size: 30px;
+    color: rgb(75, 204, 75);
+    font-size: 600;
+    margin-bottom: 30px;
+}
+
+#error{
+	color: red;
+	padding: 20px 10px;
+}
+.info form{
+	display: flex;
+	width: 100%;
+}
+
+.info form div{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.info form input{
+	width:80%;
+	padding:10px;
+	margin: 10px 0px;
+	border: 2px solid rgb(75, 204, 75);
+}
+.info form select{
+	width:80%;
+	padding:10px;
+	margin: 10px 0px;
+	border: 2px solid rgb(75, 204, 75);
+}
+.info form label{
+	color: rgb(75, 204, 75)
+}
+.info form button{
+	width:80%;
+	padding:10px 20px;
+	margin: 10px 0px;
+	background: rgb(75, 204, 75);
+	color: rgb(0, 0, 0);
+	border-radius: 10px;
+	border: none;
+	font-size: 20px;
+	cursor: pointer;
+}
+.info .print table {
+	width: 100%;
+	border: 1px solid;
+  }
+
+.info .print table tr {
+	height:30px;
+}
+
+.info .print table,td{
+	text-align: center;
+}
+.info .print table tr:nth-child(even) {background-color: rgb(252, 234, 201);}
+.info .print table th {
+	background-color: rgb(75, 204, 75);
+	color: rgb(0, 0, 0);
+  }
+
+.info .print table td div button{
+	background: red;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: honeydew;
+	cursor: pointer;
+}
+
+.info .print table td div .green{
+	background: rgb(75, 204, 75);
+}
+
+.info .print table td div button a{
+	text-decoration: none;
+}
