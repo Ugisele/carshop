@@ -20,13 +20,13 @@ phone int(10),
 messages varchar(1000),
 reg_date timestamp default current_timestamp on update current_timestamp )";
 
-if ($conn->query($sql) === TRUE) {
+if ($conne->query($sql) === TRUE) {
 
     echo "Database created successfully";
 } else {
-    echo "Error creating database: " . $conn->error;
+    echo "Error creating database: " . $conne->error;
 }
 
-$conn->close();
+$conne->close();
 
 ?>

@@ -51,7 +51,7 @@
                             <div>
                                 <div>
                                     <label for="Type">Cars available</label>
-                                            <select name='Cars for rent'>
+                                            <select name='Cars available'>
                                                 <option value="Brabus S500 (5.0l V8)"> Brabus S500 (5.0l V8)</option>
                                                 <option value="Brabus T 13 Limousine (s 640">Brabus T 13 Limousine (s 640)</option>
                                                 <option value="Brabus T65S (S65 AMG)"> Brabus T65S (S65 AMG)</option>
@@ -82,43 +82,43 @@
                                 <th>Name</th>
                                 <th>Telephone</th>
                                 <th>Amount</th>
-                                <th>Haircut</th>
+                                <th>car type</th>
                                 <th>Date</th>
                                 <th>Operations</th>
                             </tr>
                             
-                            <?php
-                                $sql= "select * from `clients`";
-                                $result=mysqli_query($conn,$sql);
+                             <?php
+                                // $sql= "select * from `clients`";
+                                // $result=mysqli_query($conn,$sql);
 
-                                if ($result) {
-                                while($row=mysqli_fetch_assoc($result)){
-                                    $id=$row['id'];
-                                    $name=$row['names'];
-                                    $telephone=$row['telephone'];
-                                    $amount=$row['amount'];
-                                    $haircut=$row['haircut'];
-                                    $date=$row['dateop'];
+                                // if ($result) {
+                                // while($row=mysqli_fetch_assoc($result)){
+                                //     $id=$row['id'];
+                                //     $name=$row['names'];
+                                //     $telephone=$row['telephone'];
+                                //     $amount=$row['amount'];
+                                //     $car_type=$row['car type'];
+                                //     $date=$row['dateop'];
 
-                                    echo '
-                                    <tr>
-                                        <td>'.$id.'</td>
-                                        <td>'.$name.'</td>
-                                        <td>'.$telephone.'</td>
-                                        <td>'.$amount.'</td>
-                                        <td>'.$haircut.'</td>
-                                        <td>'.$date.'</td>
-                                        <td>
-                                            <div>
-                                                <button class="green"><a href="Update.php?updateid='.$id.'">Update</a></button>
-                                                <button class="red"><a href="delete.php?deleteid='.$id.'">Delete</a></button>
-                                            </div>
-                                        </td>
-                                    </tr>';
-                                }
+                                //     echo '
+                                //     <tr>
+                                //         <td>'.$id.'</td>
+                                //         <td>'.$name.'</td>
+                                //         <td>'.$telephone.'</td>
+                                //         <td>'.$amount.'</td>
+                                //         <td>'.$car_type.'</td>
+                                //         <td>'.$date.'</td>
+                                //         <td>
+                                //             <div>
+                                //                 <button class="green"><a href="Update.php?updateid='.$id.'">Update</a></button>
+                                //                 <button class="red"><a href="delete.php?deleteid='.$id.'">Delete</a></button>
+                                //             </div>
+                                //         </td>
+                                //     </tr>';
+                                // }
                                 
-                                } 
-	                        ?>
+                                // } 
+	                        ?> 
 
 				  </table>
 			</div>
